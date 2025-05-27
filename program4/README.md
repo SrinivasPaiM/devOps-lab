@@ -7,7 +7,7 @@ cd maven-example
 
 // Step 2: Build and execute using Maven
 mvn clean install
-mvn exec:java -Dexec.mainClass="com.example.App"
+mvn exec:java "-Dexec.mainClass=com.example.App"
 
 // Step 3: Convert Maven project to Gradle
 gradle init
