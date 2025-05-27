@@ -11,7 +11,7 @@ mvn exec:java "-Dexec.mainClass=com.example.App"
 
 // Step 3: Convert Maven project to Gradle
 gradle init
-
+for the questions asked, answer 2, no
 // Step 4: Build and run with Gradle
 gradle build
 gradle run
