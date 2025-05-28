@@ -1,6 +1,6 @@
 
 📌 Install Ansible (on WSL/Linux/macOS)
-
+wsl --install
 sudo apt update
 sudo apt install ansible -y
 
