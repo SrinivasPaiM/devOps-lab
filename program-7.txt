@@ -1,0 +1,40 @@
+
+📌 Install Ansible (on WSL/Linux/macOS)
+
+sudo apt update
+sudo apt install ansible -y
+
+📌create ansible directory and move
+mkdir ansible-demo
+cd ansible-demo
+
+📌 Create a Simple Inventory File (list of servers)
+
+nano inventory.ini     (file name)
+
+localhost ansible_connection=local
+
+ save(ctrl+0, enter ctrl+x)
+
+📌 Create a Simple Playbook
+
+nano hello.yml   (file name)
+
+- name: Say Hello
+  hosts: localhost
+  tasks:
+    - name: Print hello message
+      debug:
+        msg: "Hello from Ansible!"
+
+save(ctrl+0, enter ctrl+x)
+
+📌 Run the Playbook
+
+ansible-playbook -i inventory.ini hello.yml
+
+✅ It’ll print:
+
+ok: [localhost] => {
+    "msg": "Hello from Ansible!"
+}
