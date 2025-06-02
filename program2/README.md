@@ -1,6 +1,10 @@
 # Example Output
 
 ```
+mvn archetype:generate -DgroupId=com.example -DartifactId=maven-example -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+(if u want to make ur own)
+cd maven-example
+
 cd myapp
 
 // Compile the source code
@@ -16,7 +20,3 @@ mvn package
 java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
 ```
 
-![Sample Output 1](output1.png)
-![Sample Output 2](output2.png)
-![Sample Output 3](output3.png)
-![Sample Output 4](output4.png)
