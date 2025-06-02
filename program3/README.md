@@ -14,5 +14,4 @@ gradle run
 gradle test
 ```
 
-![Sample Output 1](output1.png)
-![Sample Output 2](output2.png)
+
